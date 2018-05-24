@@ -1,23 +1,29 @@
 <div>
   <mat-toolbar color="primary">
-      <span>
-          <button mat-icon-button [mat-menu-trigger-for]="menu">
-            <mat-icon>more_vert</mat-icon>
-          </button>
-        </span>
-    <span class="example-fill-remaining-space"></span>
-    
-    <span>Welcome!! Please save your time</span>
+      <span>Welcome!! Smart Traveler!!!</span>
+    <span class="remaining-space"></span>
+  
+   
+        <span>
+            <button mat-button>About Us</button>
+          </span>
+          <span>
+            &nbsp;&nbsp;
+              <button mat-button>
+                Contact
+              </button>
+            </span>
+     
   </mat-toolbar>
   
-  <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Login</button>
-    <button mat-menu-item>Register</button>
-  </mat-menu>
+  <!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <alert></alert>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
 
-  <span class="done">
-    <button mat-fab>
-      <mat-icon>check circle</mat-icon>
-    </button>
-  </span>
 </div>
